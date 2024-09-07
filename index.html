@@ -3,10 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SaaS Pricing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .pricing-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .pricing-card h2 {
+            margin-top: 0;
+        }
+        .price {
+            font-size: 24px;
+            color: #333;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .features li:last-child {
+            border-bottom: none;
+        }
+        .cta {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    <div class="container">
+        <div class="header">
+            <h1>Our Pricing Plans</h1>
+            <p>Choose the plan that fits your needs.</p>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h2>Basic</h2>
+                <p class="price">$10/month</p>
+                <ul class="features">
+                    <li>10 Projects</li>
+                    <li>5 GB Storage</li>
+                    <li>Email Support</li>
+                </ul>
+                <a href="#" class="cta">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h2>Pro</h2>
+                <p class="price">$30/month</p>
+                <ul class="features">
+                    <li>50 Projects</li>
+                    <li>50 GB Storage</li>
+                    <li>Priority Email Support</li>
+                </ul>
+                <a href="#" class="cta">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h2>Enterprise</h2>
+                <p class="price">$100/month</p>
+                <ul class="features">
+                    <li>Unlimited Projects</li>
+                    <li>200 GB Storage</li>
+                    <li>Phone & Email Support</li>
+                </ul>
+                <a href="#" class="cta">Get Started</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
